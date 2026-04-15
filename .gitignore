@@ -1,2 +1,4 @@
 .npmrc
-.npmrc
+node_modules/
+dist/
+*.tsbuildinfo
