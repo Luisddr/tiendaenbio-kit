@@ -52,7 +52,8 @@ function buildWhatsAppUrl() {
 }
 
 // src/analytics.ts
-async function reportEvent() {
+async function reportEvent(_client, _params) {
+  return Promise.resolve();
 }
 export {
   buildWhatsAppUrl,
