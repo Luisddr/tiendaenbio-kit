@@ -8,14 +8,17 @@
   "files": [
     "dist"
   ],
- "scripts": {
-  "build": "tsup src/index.ts --format esm && tsc --emitDeclarationOnly --declaration --outDir dist",
-  "dev": "tsup src/index.ts --format esm --watch"
-},
+  "scripts": {
+    "build": "tsup src/index.ts --format esm && tsc --emitDeclarationOnly --declaration --outDir dist",
+    "dev": "tsup src/index.ts --format esm --watch"
+  },
   "license": "UNLICENSED",
   "private": false,
   "devDependencies": {
     "tsup": "^8.5.1",
     "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.103.0"
   }
 }
