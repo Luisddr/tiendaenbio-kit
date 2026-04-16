@@ -89,8 +89,15 @@ Total: $${total}
 }
 
 // src/analytics.ts
-async function reportEvent(_client, _params) {
-  return Promise.resolve();
+async function reportEvent(client, params) {
+  try {
+    await client.rpc("report_event", {
+      _store_slug: params.storeSlug,
+      _product_id: params.productId,
+      _event_type: params.eventType
+    });
+  } catch {
+  }
 }
 export {
   buildWhatsAppUrl,

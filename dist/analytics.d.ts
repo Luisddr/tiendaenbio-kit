@@ -4,4 +4,4 @@ export interface EventParams {
     productId: string;
     eventType: 'view' | 'checkout_click';
 }
-export declare function reportEvent(_client: TiendaEnBioClient, _params: EventParams): Promise<void>;
+export declare function reportEvent(client: TiendaEnBioClient, params: EventParams): Promise<void>;
